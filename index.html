@@ -39,12 +39,27 @@
             </ul>
         </div>
         <div class="main__container d-flex flex-column flex-sm-row">
-            <section class="main__container__menu p-4">
-                <span class="mb-3 d-flex justify-content-center justify-content-sm-start">EPISODES</span>
+            <section class="main__container__menu p-4 d-none d-sm-block">
+                <span class="mb-3 d-flex justify-content-start">EPISODES</span>
                 <ul id="episodes" class="d-flex flex-column align-items-center align-items-sm-start">
                 </ul>
             </section>
-            <section id="display" class="main__container__display p-5">
+            <!-- <section class="dropdown main__container__menu-sm p-4 d-block d-sm-none">
+                <button class="mb-3 d-flex justify-content-center" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EPISODES</button>
+                <ul id="episodes-sm" class="d-flex flex-column align-items-center align-items-sm-start dropdown-menu" aria-labelledby="dropdownMenuButton">
+                </ul>
+            </section> -->
+            <section class="dropdown main__container__menu-sm d-block d-sm-none">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </section>
+            <section id="display" class="main__container__display p-3 p-sm-5">
                 <div class="display__main d-flex flex-column p-5">
 
 
