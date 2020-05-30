@@ -114,6 +114,14 @@ body{
     color: #44281d;
 }
 
+@media (max-width: 575px){
+    .main__container__menu{
+        width: 100%;
+        max-width: 575px;
+        height: 100vh;
+    }
+}
+
 .main__container__display{
     width: 73%;
 }
