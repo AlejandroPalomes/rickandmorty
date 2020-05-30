@@ -36,5 +36,6 @@ axios({
     })
     $(".main__container__menu--episode").click(e=>{
         console.log(e.target)
+        printEpisode($(e.target).data("url"));
     })
   });
