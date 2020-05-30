@@ -135,6 +135,57 @@ body{
     font-size: 28px;
 }
 
+
+/* CHARACTER SECTION */
+.display__main__characters--main{
+    height: 200px;
+    min-width: 300px;
+    width: 48%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.display__main__characters--main:hover{
+    transform: scale(1.015);
+    transition: 0.3s ease;
+}
+
+.display__main__characters--main .display__main__characters--img img{
+    transition: 0.3s ease;
+}
+.display__main__characters--main:hover .display__main__characters--img img{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.display__main__characters--img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.character__name{
+    font-size: 32px;
+}
+
+.character__info{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.status--green, .status--red{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+.status--green{
+    background: rgb(75, 197, 60);
+}
+
 #info{
     position: fixed;
     bottom: 20px;
