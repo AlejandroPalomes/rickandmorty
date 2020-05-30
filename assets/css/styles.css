@@ -116,13 +116,13 @@ body{
     background: rgb(50, 50, 60);
 }
 
-.display__main h4{
+.display__main--episode h4{
     color: #e89ac7;
     font-size: 36px;
     font-weight: 900;
 }
 
-.display__main > span:first-of-type{
+.display__main--episode > span:first-of-type{
     color: #97ce4c;
     font-size: 24px;
     font-weight: 300;
