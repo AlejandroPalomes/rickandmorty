@@ -128,7 +128,7 @@ body{
     font-weight: 300;
 }
 
-.display__main--characters{
+.display__main__title{
     color: white;
     text-transform: uppercase;
     font-weight: 100;
