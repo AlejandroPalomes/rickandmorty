@@ -6,12 +6,23 @@
     list-style: none;
 }
 
+
+
 /* header {
     height: 100px;
     background: #97ce4c;
     position: absolute;
     top: 0;
 } */
+
+button{
+    text-align: inherit;
+    border: inherit;
+}
+
+button:active, button:focus{
+    outline: none;
+}
 
 .main{
     position: relative;
@@ -114,6 +125,7 @@ body{
     color: white;
     border-radius: 15px;
     background: rgb(50, 50, 60);
+    overflow: scroll;
 }
 
 .display__main--episode h4{
@@ -146,9 +158,13 @@ body{
     background: rgba(255, 255, 255, 0.1);
     transition: 0.3s ease;
     cursor: pointer;
+    color: white;
+    border: none;
+    text-indent: none;
 }
 .display__main__characters--main:hover{
     transform: scale(1.015);
+    overflow: hidden;
     transition: 0.3s ease;
 }
 
@@ -160,14 +176,20 @@ body{
     transition: 0.3s ease;
 }
 
+.display__main__characters--description{
+    height: 200px;
+}
+
 .display__main__characters--img{
     width: 200px;
     height: 200px;
+    border-radius: 15px 0 0 15px;
     overflow: hidden;
 }
 
 .character__name{
     font-size: 32px;
+    /* line-height: 10px; */
 }
 
 .character__info{
@@ -184,6 +206,14 @@ body{
 
 .status--green{
     background: rgb(75, 197, 60);
+}
+
+.status--red{
+    background: rgb(210, 50, 40);
+}
+
+.status--grey{
+    background: rgb(150, 150, 150);
 }
 
 .character__lastLocation span:first-child{
