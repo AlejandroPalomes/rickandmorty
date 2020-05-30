@@ -88,7 +88,6 @@ body{
     color: white;
     transition: 0.2s ease;
 }
-
 .main__container__menu--episode:hover{
     background: white;
     color: #97ce4c;
@@ -100,8 +99,15 @@ body{
     outline: none;
 }
 .main__container__menu--episode:active{
-    transform: scale(0.9);
+    transform: scale(1);
     transition: 0.1s ease;
+}
+
+.main__container__menu>span{
+    font-size: 24px;
+    font-weight: 900;
+    border-bottom: 1px solid #44281d;
+    color: #44281d;
 }
 
 #info{
