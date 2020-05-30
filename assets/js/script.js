@@ -22,3 +22,19 @@ $("#sideMenu").mouseout(e=>{
     }, 500)
     // $("#sideMenu").css("width", "20px")
 })
+
+
+axios({
+    method: 'get',
+    url: 'https://rickandmortyapi.com/api/episode',
+
+  }).then((response)=>{
+    console.log(response.data.results)
+    $(response.data.results).each((i,e)=>{
+        console.log(e.name)
+        $("#episodes").append(`<li><button id="${e.id}" data-url="${e.url}" class="main__container__menu--episode mb-1 p-2">${e.name}</button><li>`);
+    })
+    $(".main__container__menu--episode").click(e=>{
+        console.log(e.target)
+    })
+  });

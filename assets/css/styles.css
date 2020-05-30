@@ -2,6 +2,8 @@
     /* background: black; */
     padding: 0;
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
 }
 
 /* header {
@@ -13,6 +15,10 @@
 
 .main{
     position: relative;
+}
+
+body{
+    background: black;
 }
 
 .cats{
@@ -36,8 +42,70 @@
     overflow: hidden;
 }
 
+.title{
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    
+}
+
+.apiLogo{
+    height: 100px;
+    width: 100px;
+    background: #97ce4c;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.title h1{
+    color: white;
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.main__container__menu{
+    height: 100vh;
+    width: 27%;
+    max-width: 400px;
+    min-width: 200px;
+    background: #97ce4c;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+.main__container{
+    height: 100vh;
+    background: rgb(30,30,40);
+}
+
+.main__container__menu--episode{
+    background: none;
+    background: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 17px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.main__container__menu--episode:hover{
+    background: white;
+    color: #97ce4c;
+    font-weight: 900;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+.main__container__menu--episode:focus{
+    outline: none;
+}
+.main__container__menu--episode:active{
+    transform: scale(0.9);
+    transition: 0.1s ease;
+}
+
 #info{
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 }
