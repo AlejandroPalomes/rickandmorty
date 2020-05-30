@@ -186,6 +186,18 @@ body{
     background: rgb(75, 197, 60);
 }
 
+.character__lastLocation span:first-child{
+    font-weight: 300;
+    font-size: 24px;
+    color: rgb(150, 150, 150);
+}
+
+.character__lastLocation span:last-child{
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+
 #info{
     position: fixed;
     bottom: 20px;
