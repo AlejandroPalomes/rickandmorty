@@ -9,7 +9,7 @@ function printEpisode(url){
             <h4>${response.data.name}</h4>
             <span><span>${response.data.air_date}</span> | <span>${response.data.episode}</span></span>
             <span class="display__main__title mt-5 mb-3">Characters</span>
-            <div class="display__main__characters d-flex justify-content-between flex-wrap"></div>
+            <div class="display__main__characters d-flex justify-content-sm-between justify-content-around flex-wrap"></div>
         </div>
         `);
         var axiosArr = [];
@@ -20,12 +20,16 @@ function printEpisode(url){
             .then(responseArr => {
                 $(responseArr).each((i, e)=>{
                         var status;
+                        var statusSm;
                         if(e.data.status == "Alive"){
                             status = "status--green"
+                            statusSm = "statusSm--green"
                         }else if(e.data.status == "Dead"){
                             status = "status--red"
+                            statusSm = "statusSm--red"
                         }else{
                             status = "status--grey"
+                            statusSm = "statusSm--grey"
                         }
                         $(".display__main__characters").append(`
                         <button class="display__main__characters--main d-flex mb-3" data-url="${e.data.url}">
@@ -35,9 +39,9 @@ function printEpisode(url){
                             <div class="d-flex flex-column justify-content-between p-3 display__main__characters--description">
                                 <div class="d-flex flex-column align-items-start">
                                     <span class="character__name">${e.data.name}</span>
-                                    <div class="d-flex align-items-center character__info"><div class="${status} mr-2"></div><span><span class="character__status">${e.data.status}</span> - <span class="character__specie">${e.data.species}</span></span></div>
+                                    <div class="d-flex align-items-center character__info"><div class="${status} mr-2 d-none d-sm-block"></div><span><span class="character__status ${statusSm}">${e.data.status}</span> - <span class="character__specie">${e.data.species}</span></span></div>
                                 </div>
-                                <div class="character__lastLocation d-flex flex-column align-items-start">
+                                <div class="character__lastLocation d-none d-sm-flex flex-column align-items-start">
                                     <span>Last known location:</span>
                                     <span class="lastLocationBtn" data-url="${e.data.location.url}">${e.data.location.name}</span>
                                 </div>

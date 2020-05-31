@@ -35,9 +35,9 @@ function printLocation(url) {
                             <div class="d-flex flex-column justify-content-between p-3 display__main__characters--description">
                                 <div class="d-flex flex-column align-items-start">
                                     <span class="character__name">${e.data.name}</span>
-                                    <div class="d-flex align-items-center character__info"><div class="${status} mr-2"></div><span><span class="character__status">${e.data.status}</span> - <span class="character__specie">${e.data.species}</span></span></div>
+                                    <div class="d-flex align-items-center character__info"><div class="${status} mr-2 d-none d-sm-block"></div><span><span class="character__status ${statusSm}">${e.data.status}</span> - <span class="character__specie">${e.data.species}</span></span></div>
                                 </div>
-                                <div class="character__lastLocation d-flex flex-column align-items-start">
+                                <div class="character__lastLocation d-none d-sm-flex flex-column align-items-start">
                                     <span>Last known location:</span>
                                     <span class="lastLocationBtn" data-url="${e.data.location.url}">${e.data.location.name}</span>
                                 </div>

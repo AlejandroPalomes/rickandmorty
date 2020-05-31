@@ -325,8 +325,8 @@ h1{
     }
     .display__main__characters--main{
         height: 150px;
-        min-width: 300px;
-        width: 100%;
+        min-width: 270px;
+        width: 270px;
         border-radius: 15px;
         overflow: hidden;
         background: rgba(255, 255, 255, 0.1);
@@ -345,6 +345,7 @@ h1{
     .display__main__characters--img{
         width: 150px;
         height: 150px;
+        min-width: 150px;
         border-radius: 15px 0 0 15px;
         overflow: hidden;
     }
@@ -353,22 +354,38 @@ h1{
     }
 
     .character__name{
-        font-size: 24px;
+        font-size: 20px;
     }
     
     .character__info{
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .character__lastLocation span:first-child{
-        font-size: 18px;
+    /* .character__lastLocation span:first-child{
+        font-size: 16px;
     }
     
     .character__lastLocation span:last-child{
         font-size: 14px;
+    } */
+
+    .statusSm--green{
+        color: rgb(75, 197, 60);
+    }
+
+    .statusSm--red{
+        color: rgb(210, 50, 40);
+    }
+
+    .statusSm--grey{
+        color: rgb(150, 150, 150);
     }
 
     .display__main--character{
+        text-align: center;
+    }
+
+    .display__main__episodes--title{
         text-align: center;
     }
 }
