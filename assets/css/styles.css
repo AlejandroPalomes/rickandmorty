@@ -8,6 +8,7 @@
 button{
     text-align: inherit;
     border: inherit;
+    background: none;
 }
 
 button:active, button:focus{
@@ -156,7 +157,8 @@ h1{
 }
 
 .display__main--episode h4,
-.display__main--character h4{
+.display__main--character h4,
+.display__main--location h4{
     font-size: 36px;
     font-weight: 900;
 }
@@ -169,11 +171,26 @@ h1{
     color: #f0e14a;
 }
 
+.display__main--location h4{
+    color: white;
+}
+
 .display__main--episode > span:first-of-type,
-.display__main--character > span:first-of-type{
+.display__main--character span:first-of-type,
+.display__main--character button,
+.display__main--location > span:first-of-type{
     color: #97ce4c;
     font-size: 24px;
     font-weight: 300;
+}
+
+.display__main--character button:hover{
+    color: white;
+}
+
+.display__main--character img{
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .display__main__title{

@@ -1,22 +1,22 @@
-function printEpisode(url){
-    $(".display__main").empty();
-    axios({
-        method: 'get',
-        url: url,
-      }).then((response)=>{
-        $(".display__main").append(`
-        <div class="display__main--episode d-flex flex-column">
+function printLocation(url) {
+  $(".display__main").empty();
+  axios({
+    method: 'get',
+    url: url,
+  }).then((response) => {
+    $(".display__main").append(`
+        <div class="display__main--location d-flex flex-column">
             <h4>${response.data.name}</h4>
-            <span><span>${response.data.air_date}</span> | <span>${response.data.episode}</span></span>
-            <span class="display__main__title mt-5 mb-3">Characters</span>
-            <div class="display__main__characters d-flex justify-content-between flex-wrap"></div>
+            <span><span>${response.data.type}</span> | <span>${response.data.dimension}</span></span>
+            <span class="display__main__title mt-5 mb-3">Residents</span>
+            <div class="display__main__residents d-flex justify-content-sm-between justify-content-around flex-wrap"></div>
         </div>
         `);
-        var axiosArr = [];
-        $(response.data.characters).each((i, char)=>{
-            axiosArr.push(axios.get(char));
-        })
-        axios.all(axiosArr)
+    var axiosArr = [];
+    $(response.data.residents).each((i, char) => {
+      axiosArr.push(axios.get(char));
+    })
+    axios.all(axiosArr)
             .then(responseArr => {
                 $(responseArr).each((i, e)=>{
                         var status;
@@ -27,7 +27,7 @@ function printEpisode(url){
                         }else{
                             status = "status--grey"
                         }
-                        $(".display__main__characters").append(`
+                        $(".display__main__residents").append(`
                         <button class="display__main__characters--main d-flex mb-3" data-url="${e.data.url}">
                             <div class="display__main__characters--img">
                                 <img src="${e.data.image}" height="200"alt="">
@@ -53,5 +53,5 @@ function printEpisode(url){
                     return false;
                 });
             });
-      });
+  });
 }

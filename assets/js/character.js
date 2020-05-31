@@ -1,5 +1,4 @@
 function printCharacter(url) {
-  console.log(url);
   $(".display__main").empty();
   axios({
     method: 'get',
@@ -7,10 +6,15 @@ function printCharacter(url) {
   }).then((response) => {
     $(".display__main").append(`
         <div class="display__main--character d-flex flex-column">
-            <h4>${response.data.name}</h4>
-            <span><span>${response.data.species}</span> | <span>${response.data.status}</span> | <span>${response.data.gender}</span> | <span>${response.data.origin.name}</span></span>
+            <div class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
+              <img src="${response.data.image}" height="200" width="200" class="mb-2 mb-sm-0 mr-0 mr-sm-5">
+              <div class="d-flex flex-column align-items-center align-items-sm-start">
+                <h4>${response.data.name}</h4>
+                <span><span>${response.data.species}</span> | <span>${response.data.status}</span> | <span>${response.data.gender}</span> | <button id="locationBtn" data-url="${response.data.origin.url}">${response.data.origin.name}</button></span>
+              </div>
+                </div>
             <span class="display__main__title mt-5 mb-3">Episodes</span>
-            <div class="display__main__episodes d-flex justify-content-between flex-wrap"></div>
+            <div class="display__main__episodes d-flex justify-content-sm-between justify-content-around flex-wrap"></div>
         </div>
         `);
     var axiosArr = [];
@@ -28,8 +32,10 @@ function printCharacter(url) {
                         `);
         });
         $(".display__main__episodes--main").click(e => {
-          // console.log($(e.currentTarget).data("url"))
           printEpisode($(e.currentTarget).data("url"))
+        });
+        $("#locationBtn").click(e => {
+          printLocation($(e.target).data("url"));
         });
       });
   });
