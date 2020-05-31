@@ -16,8 +16,12 @@ button:active, button:focus{
 
 body{
     background: black;
-
 }
+
+h1{
+    text-align: center;
+}
+
 .main{
     position: relative;
 }
@@ -138,7 +142,7 @@ body{
 /*! START GENERAL DISPLAY !*/
 
 .main__container__display{
-    width: 73%;
+    width: 100%;
 }
 
 .display__main{
@@ -173,11 +177,13 @@ body{
 /*! END GENERAL DISPLAY !*/
 
 
-/* CHARACTER SECTION */
+/*? CHARACTER SECTION ?*/
+
 .display__main__characters--main{
     height: 200px;
-    min-width: 300px;
-    width: 48%;
+    min-width: 400px;
+    max-width: 550px;
+    width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1);
