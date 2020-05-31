@@ -204,7 +204,7 @@ h1{
 /*! END GENERAL DISPLAY !*/
 
 
-/*? CHARACTER SECTION ?*/
+/*? MAIN DISPLAY SECTION (cards to other pages) ?*/
 
 .display__main__characters--main,
 .display__main__episodes--main{
@@ -358,19 +358,11 @@ h1{
     .character__name{
         font-size: 20px;
     }
-    
+
     .character__info{
         font-size: 16px;
         width: 80px;
     }
-
-    /* .character__lastLocation span:first-child{
-        font-size: 16px;
-    }
-    
-    .character__lastLocation span:last-child{
-        font-size: 14px;
-    } */
 
     .statusSm--green{
         color: rgb(75, 197, 60);
@@ -392,16 +384,6 @@ h1{
         text-align: center;
     }
 }
-
-/* @media (max-width: 575px){
-
-    .main__container__display{
-        margin-top: 10vh;
-        width: 100%;
-        height: 90vh;
-    }
-
-} */
 
 #info{
     position: fixed;
