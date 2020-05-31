@@ -367,6 +367,10 @@ h1{
     .character__lastLocation span:last-child{
         font-size: 14px;
     }
+
+    .display__main--character{
+        text-align: center;
+    }
 }
 
 #info{
