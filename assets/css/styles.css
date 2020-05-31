@@ -191,6 +191,7 @@ h1{
 .display__main--character img{
     border-radius: 15px;
     overflow: hidden;
+    min-width: 200px;
 }
 
 .display__main__title{
@@ -311,16 +312,17 @@ h1{
     cursor: pointer;
 }
 
-@media (max-width: 575px){
-
+/* @media (max-width: 575px){ */
+@media (max-width: 768px){
+/* 
     .main__container__display{
         margin-top: 10vh;
         width: 100%;
         height: 90vh;
-    }
+    } */
 
     .display__main__characters{
-        height: 80vh;
+        height: 100%;
         overflow: scroll;
     }
     .display__main__characters--main{
@@ -359,6 +361,7 @@ h1{
     
     .character__info{
         font-size: 16px;
+        width: 80px;
     }
 
     /* .character__lastLocation span:first-child{
@@ -388,6 +391,16 @@ h1{
     .display__main__episodes--title{
         text-align: center;
     }
+}
+
+@media (max-width: 575px){
+
+    .main__container__display{
+        margin-top: 10vh;
+        width: 100%;
+        height: 90vh;
+    }
+
 }
 
 #info{

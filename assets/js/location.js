@@ -20,19 +20,22 @@ function printLocation(url) {
             .then(responseArr => {
                 $(responseArr).each((i, e)=>{
                         var status;
+                        var statusSM;
                         if(e.data.status == "Alive"){
                             status = "status--green"
+                            statusSm = "statusSm--green"
                         }else if(e.data.status == "Dead"){
-                            status = "status--red"
+                          status = "status--red"
+                          statusSm = "statusSm--red"
                         }else{
-                            status = "status--grey"
+                            statusSm = "statusSm--grey"
                         }
                         $(".display__main__residents").append(`
                         <button class="display__main__characters--main d-flex mb-3" data-url="${e.data.url}">
                             <div class="display__main__characters--img">
                                 <img src="${e.data.image}" height="200"alt="">
                             </div>
-                            <div class="d-flex flex-column justify-content-between p-3 display__main__characters--description">
+                            <div class="d-flex flex-column justify-content-sm-between justify-content-around p-3 display__main__characters--description">
                                 <div class="d-flex flex-column align-items-start">
                                     <span class="character__name">${e.data.name}</span>
                                     <div class="d-flex align-items-center character__info"><div class="${status} mr-2 d-none d-sm-block"></div><span><span class="character__status ${statusSm}">${e.data.status}</span> - <span class="character__specie">${e.data.species}</span></span></div>
