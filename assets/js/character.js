@@ -25,11 +25,11 @@ function printCharacter(url) {
       .then(responseArr => {
         $(responseArr).each((i, e) => {
           $(".display__main__episodes").append(`
-                        <button class="display__main__episodes--main d-flex flex-column mb-3 p-2 mr-2 justify-content-center align-items-center align-items-sm-start" data-url="${e.data.url}">
-                            <span class="display__main__episodes--title">${e.data.name}</span>
-                            <span class="display__main__episodes--code">${e.data.episode}</span>
-                        </button>
-                        `);
+              <button class="display__main__episodes--main d-flex flex-column mb-3 p-2 mr-2 justify-content-center align-items-center align-items-sm-start" data-url="${e.data.url}">
+                  <span class="display__main__episodes--title">${e.data.name}</span>
+                  <span class="display__main__episodes--code">${e.data.episode}</span>
+              </button>
+          `);
         });
         $(".display__main__episodes--main").click(e => {
           printEpisode($(e.currentTarget).data("url"))
