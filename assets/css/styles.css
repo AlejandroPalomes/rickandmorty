@@ -385,6 +385,21 @@ h1{
     }
 }
 
+.loadMore{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #e89ac7;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.loadMore:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
 #info{
     position: fixed;
     bottom: 20px;

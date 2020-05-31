@@ -17,8 +17,8 @@ axios({
             $("#episodes").append(`<li><button id="${e.id}" data-url="${e.url}" class="main__container__menu--episode mb-1 p-2">${e.name}</button><li>`);
             $("#episodes-sm").append(`<li><button id="s${e.id}" data-url="${e.url}" class="main__container__menu--episode mb-1 p-2" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">${e.name}</button><li>`);
         })
-        $("#episodes").append(`<button class="loadMore mx-auto mt-4">Load more</button>`);
-        $("#episodes-sm").append(`<button class="loadMore mx-auto mt-4">Load more</button>`);
+        $("#episodes").append(`<button class="loadMore mx-auto mt-4 p-2">Load more</button>`);
+        $("#episodes-sm").append(`<button class="loadMore mx-auto mt-4 p-2">Load more</button>`);
         $(".main__container__menu--episode").click(e=>{
             printEpisode($(e.target).data("url"));
         })
