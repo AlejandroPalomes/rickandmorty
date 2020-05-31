@@ -1,19 +1,9 @@
 *{
-    /* background: black; */
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     list-style: none;
 }
-
-
-
-/* header {
-    height: 100px;
-    background: #97ce4c;
-    position: absolute;
-    top: 0;
-} */
 
 button{
     text-align: inherit;
@@ -24,19 +14,20 @@ button:active, button:focus{
     outline: none;
 }
 
+body{
+    background: black;
+
+}
 .main{
     position: relative;
 }
 
-body{
-    background: black;
-}
+/*! START SCHRODINGER CATS !*/
 
 .cats{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* background: url("../cats2/cats_0017_Layer-2.png"); */
     background: black;
     background-size: cover;
     background-attachment: fixed;
@@ -50,7 +41,6 @@ body{
     width: 100vw;
     height: 100vh;
     cursor: pointer;
-    
 }
 
 .apiLogo{
@@ -67,6 +57,10 @@ body{
     font-weight: 900;
 }
 
+/*! END SCHRODINGER CATS !*/
+
+/*? START SIDE MENU ?*/
+
 .main__container__menu, .main__container__menu-sm{
     height: 100vh;
     width: 27%;
@@ -81,6 +75,15 @@ body{
     width: 100%;
     max-width: 575px;
     height: 10vh;
+}
+
+#episodes-sm{
+    position: fixed;
+    height: 90vh;
+    width: 100%;
+    bottom: -20px;
+    overflow: scroll;
+    background: #97ce4c;
 }
 
 .main__container{
@@ -121,6 +124,10 @@ body{
     color: #44281d;
 }
 
+/*? END SIDE MENU ?*/
+
+/*! START GENERAL DISPLAY !*/
+
 .main__container__display{
     width: 73%;
 }
@@ -153,6 +160,8 @@ body{
     font-weight: 100;
     font-size: 28px;
 }
+
+/*! END GENERAL DISPLAY !*/
 
 
 /* CHARACTER SECTION */
