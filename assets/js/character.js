@@ -16,7 +16,7 @@ function printCharacter(url) {
             <span class="display__main__title mt-5 mb-3">Episodes</span>
             <div class="display__main__episodes d-flex  justify-content-around flex-wrap"></div>
         </div>
-        `);
+    `);
     var axiosArr = [];
     $(response.data.episode).each((i, char) => {
       axiosArr.push(axios.get(char));
