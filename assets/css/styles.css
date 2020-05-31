@@ -155,13 +155,22 @@ h1{
     overflow: scroll;
 }
 
-.display__main--episode h4{
-    color: #e89ac7;
+.display__main--episode h4,
+.display__main--character h4{
     font-size: 36px;
     font-weight: 900;
 }
 
-.display__main--episode > span:first-of-type{
+.display__main--episode h4{
+    color: #e89ac7;
+}
+
+.display__main--character h4{
+    color: #f0e14a;
+}
+
+.display__main--episode > span:first-of-type,
+.display__main--character > span:first-of-type{
     color: #97ce4c;
     font-size: 24px;
     font-weight: 300;
@@ -179,11 +188,8 @@ h1{
 
 /*? CHARACTER SECTION ?*/
 
-.display__main__characters--main{
-    height: 200px;
-    min-width: 400px;
-    max-width: 550px;
-    width: 100%;
+.display__main__characters--main,
+.display__main__episodes--main{
     border-radius: 15px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1);
@@ -193,10 +199,35 @@ h1{
     border: none;
     text-indent: none;
 }
-.display__main__characters--main:hover{
+
+.display__main__characters--main{
+    height: 200px;
+    min-width: 400px;
+    max-width: 550px;
+    width: 100%;
+}
+.display__main__episodes--main{
+    width: 230px;
+    height: 100px;
+}
+.display__main__characters--main:hover,
+.display__main__episodes--main:hover{
     transform: scale(1.015);
     overflow: hidden;
     transition: 0.3s ease;
+}
+.display__main__episodes--main:hover{
+    transform: scale(1.1);
+}
+
+.display__main__episodes--main span:first-child{
+    color: #e89ac7;
+    font-weight: 900;
+    font-size: 20px;
+}
+.display__main__episodes--main span:last-child{
+    color: #97ce4c;
+    font-weight: 200;
 }
 
 .display__main__characters--main .display__main__characters--img img{

@@ -48,8 +48,8 @@ function printEpisode(url){
                 $(".display__main__characters--main").click(e=>{
                     // console.log($(e.currentTarget).data("url"))
                     printCharacter($(e.currentTarget).data("url"))
-                })
-            })
+                });
+            });
         // <div class="display__main__characters--img">
         //                 <img src="assets/img/5pr2d6fopii31.jpg" height="200"alt="">
         //             </div>
