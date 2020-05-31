@@ -6,9 +6,9 @@ function printCharacter(url) {
   }).then((response) => {
     $(".display__main").append(`
         <div class="display__main--character d-flex flex-column">
-            <div class="d-block d-sm-flex flex-column flex-md-row align-items-center align-items-sm-start">
-              <img src="${response.data.image}" height="200" width="200" class="mb-2 mb-md-0 mr-0 mr-sm-5">
-              <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <div class="d-block d-md-flex flex-column flex-md-row align-items-center align-items-md-start">
+              <img src="${response.data.image}" height="200" width="200" class="mb-2 mb-md-0 mr-0 mr-md-5">
+              <div class="d-flex flex-column align-items-center align-items-md-start">
                 <h4>${response.data.name}</h4>
                 <span><span>${response.data.species}</span> | <span>${response.data.status}</span> | <span>${response.data.gender}</span> | <button id="locationBtn" data-url="${response.data.origin.url}">${response.data.origin.name}</button></span>
               </div>

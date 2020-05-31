@@ -9,7 +9,7 @@ function printEpisode(url){
             <h4>${response.data.name}</h4>
             <span><span>${response.data.air_date}</span> | <span>${response.data.episode}</span></span>
             <span class="display__main__title mt-5 mb-3">Characters</span>
-            <div class="display__main__characters d-flex justify-content-md-between justify-content-around flex-wrap"></div>
+            <div class="display__main__characters d-flex justify-content-around flex-wrap"></div>
         </div>
         `);
         var axiosArr = [];
