@@ -39,13 +39,17 @@
             </ul>
         </div>
         <div class="main__container d-flex flex-column flex-sm-row">
-            <section class="main__container__menu p-4 d-none d-sm-block">
+            <nav class="main__container__menu p-4 d-none d-sm-block">
                 <span class="mb-3 d-flex justify-content-start">EPISODES</span>
                 <ul id="episodes" class="d-flex flex-column align-items-center align-items-sm-start">
                 </ul>
-            </section>
-            <nav class="main__container__menu-sm p-4 d-block d-sm-none">
-                <button class="navbar-toggler mb-3 d-flex justify-content-center" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">EPISODES</button>
+            </nav>
+            <nav class="main__container__menu-sm p-4 d-flex flex-column align-items-center d-sm-none">
+                <button class="navbar-toggler mb-2 d-flex justify-content-center" data-toggle="collapse" data-target="#collapseMenu" aria-controls="collapseMenu" aria-expanded="false" aria-label="Toggle navigation">EPISODES</button>
+                <div id="collapseMenu" class="collapse">
+                    <ul id="episodes-sm" class="py-2 d-flex flex-column align-items-center">
+                    </ul>
+                </div>
             </nav>
             <section id="display" class="main__container__display p-3 p-sm-5">
                 <div class="display__main d-flex flex-column p-5">
@@ -55,10 +59,7 @@
         </div>
         <img id="info" src="assets/img/info.png" alt="info" height="35" width="35">
     </div>
-    <div id="collapseMenu" class="collapse">
-        <ul id="episodes-sm" class="py-2 d-flex flex-column align-items-center align-items-sm-start d-block d-sm-none ">
-        </ul>
-    </div>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
