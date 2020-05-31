@@ -258,6 +258,11 @@ h1{
     color: white;
 }
 
+.character__lastLocation span:last-child:hover{
+    color: #97ce4c;
+    cursor: pointer;
+}
+
 @media (max-width: 575px){
 
     .main__container__display{
@@ -265,7 +270,7 @@ h1{
         width: 100%;
         height: 90vh;
     }
-    
+
     .display__main__characters{
         height: 80vh;
         overflow: scroll;

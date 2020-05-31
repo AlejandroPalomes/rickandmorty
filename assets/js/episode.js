@@ -46,8 +46,8 @@ function printEpisode(url){
                         `);
                 });
                 $(".display__main__characters--main").click(e=>{
-                    console.log($(e.currentTarget).data("url"))
-                    // printCharacter(e.currentTarget.url)
+                    // console.log($(e.currentTarget).data("url"))
+                    printCharacter($(e.currentTarget).data("url"))
                 })
             })
         // <div class="display__main__characters--img">
