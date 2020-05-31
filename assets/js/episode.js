@@ -28,7 +28,7 @@ function printEpisode(url){
                             status = "status--grey"
                         }
                         $(".display__main__characters").append(`
-                        <button class="display__main__characters--main d-flex mb-3">
+                        <button class="display__main__characters--main d-flex mb-3" data-url="${e.data.url}">
                             <div class="display__main__characters--img">
                                 <img src="${e.data.image}" height="200"alt="">
                             </div>
@@ -46,7 +46,8 @@ function printEpisode(url){
                         `);
                 });
                 $(".display__main__characters--main").click(e=>{
-                    console.log(e)
+                    console.log($(e.currentTarget).data("url"))
+                    // printCharacter(e.currentTarget.url)
                 })
             })
         // <div class="display__main__characters--img">
