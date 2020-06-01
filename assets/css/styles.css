@@ -383,7 +383,13 @@ h1{
     .display__main__episodes--title{
         text-align: center;
     }
+    
+    .display__main__portal{
+        width: 300px;
+        height: 300px;
+    }
 }
+
 
 .loadMore{
     color: white;
